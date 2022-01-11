@@ -1,0 +1,19 @@
+body {
+  background-color: var(--bs-dark);
+  color: white;
+}
+
+.form-select,
+input[type='number'],
+input[type='number']:focus {
+  background-color: var(--bs-dark);
+  color: white;
+}
+
+.container {
+  padding-top: 7.5rem;
+}
+
+.svg {
+  filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(150deg) brightness(100%);
+}
