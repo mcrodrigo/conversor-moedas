@@ -22,7 +22,7 @@ const makeConversion = () => {
 }
 
 const setDefaultCurrencyTwoValue = () => {
-  const baseCodeTwo = localStorage.getItem('currency-two') || 'BRL'
+  const baseCodeTwo = sessionStorage.getItem('currency-two') || 'BRL'
   Array.from(currencyTwo)
     .find(({ text }) => text === baseCodeTwo)
     .selected = true
@@ -54,7 +54,7 @@ const convertFrom =  e => {
 
 const convertTo = e => {
   const base_code = e.target[e.target.selectedIndex].text
-  localStorage.setItem('currency-two', base_code)
+  sessionStorage.setItem('currency-two', base_code)
   makeConversion()
 }
 
